@@ -3,7 +3,7 @@ import sanityClient from "./sanity";
 let sanityQuery = (query, params) => sanityClient.fetch(query, params);
 
 export const getFeaturedRestaurants = () => {
-  return ` 
+  return sanityQuery(` 
   *[_type=='featured']{
   ...,
   restaurants[] -> {
@@ -13,11 +13,11 @@ export const getFeaturedRestaurants = () => {
     }
   }
 }
-`;
+`);
 };
 
-export const getCategory = () => {
-  return sanityClient(`
+export const getCategories = () => {
+  return sanityQuery(`
   *[_type=='category']
   `);
 };

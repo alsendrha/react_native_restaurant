@@ -11,6 +11,6 @@ const client = createClient({
 // 이미지 rul 가져오는거
 const builder = imageUrlBuilder(client);
 
-export const rulFor = (source) => builder.image(source);
+export const urlFor = (source) => builder.image(source);
 
 export default client;
