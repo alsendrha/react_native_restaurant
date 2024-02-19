@@ -30,7 +30,10 @@ export const getFeaturedRestaurantById = (id) => {
   restaurants[] -> {
     ...,
     dishes[] -> {
-      name
+      ...,
+      type-> {
+        name,
+      }
     }
   }
 }[0]

@@ -5,6 +5,8 @@ import {
   StyleSheet,
   Text,
   TextInput,
+  Touchable,
+  TouchableOpacity,
   View,
 } from "react-native";
 import React, { useEffect, useLayoutEffect, useState } from "react";
